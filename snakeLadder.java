@@ -3,8 +3,11 @@ public class snakeLadder
 	
 	public static void main(String[] args)
 	{
-		int position = 10;
+		int position = 0;
 		System.out.println(" Initial Position : " +position);
+		
+		while(position <= 100 )
+		{
 		
 		int option  = (int)(Math.random()*3)+1;
 		System.out.println("Option : " +option);
@@ -48,6 +51,8 @@ public class snakeLadder
 			
 				
 			
+		}
+		
 		}
 		
 		
