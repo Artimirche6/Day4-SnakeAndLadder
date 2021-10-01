@@ -6,7 +6,7 @@ public class snakeLadder
 		int diceRoll = 0, position = 0;
 		System.out.println(" *******Initial Position : " +position+"*******");
 		
-		while(position <= 10)
+		while(position <= 100)
 		{
 		
 		int option  = (int)(Math.random()*3)+1;
@@ -21,12 +21,12 @@ public class snakeLadder
 					
 				position += diceRoll;
 				
-				if (position > 10)
+				if (position > 100)
 				{
 					position -= diceRoll;
 					System.out.println("No Move Position (More than 10) : " +position);
 				}
-				else if(position == 10)
+				else if(position == 100)
 				{
 					System.out.println("You Won : " +position);
 					System.exit(0);
@@ -45,7 +45,7 @@ public class snakeLadder
 					position = 0;
 					System.out.println("Initial Start Position : " +position);
 				}
-				else if(position == 10)
+				else if(position == 100)
 				{
 					System.out.println("You Won : " +position);
 					System.exit(0);
